@@ -34,6 +34,9 @@ class Main {
         try {
             if (((Arrays.asList(numbers1).contains(num1))) && (Arrays.asList(numbers1).contains(num2))) {
                 switch (num1) {
+                    case "0":
+                        num1.equals("0");
+                        throw new Exception("на вход числа от I до X");
                     case "I":
                         num1.equals("I");
                         num3 = 1;
@@ -78,6 +81,9 @@ class Main {
                         throw new Exception("введены значения больше X");
                 }
                 switch (num2) {
+                    case "0":
+                        num1.equals("0");
+                        throw new Exception("на вход числа от I до X");
                     case "I":
                         num2.equals("I");
                         num4 = 1;
@@ -167,6 +173,7 @@ class Main {
                     }
                 } else {
                     throw new Exception("введены значения больше 10");
+
                 }
             }
         } catch (NumberFormatException e) {
